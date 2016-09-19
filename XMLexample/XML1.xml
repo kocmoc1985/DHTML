@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<!--
+    Document   : XML1.xml
+    Created on : den 11 september 2011, 17:57
+    Author     : KOCMOC
+    Description:
+        Purpose of the document follows.
+-->
+
+ <!DOCTYPE root-element SYSTEM "XML1.dtd">
+<arg>
+
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+
+</arg>

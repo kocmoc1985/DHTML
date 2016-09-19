@@ -1,0 +1,21 @@
+1. sql injection - use prepared statements
+2. filtrera indata så att användaren inte skickar in html kod - htmlspecialchars($_GET['btitle'])
+3. use password hashing- that means passwords are stored in db not as original
+  but as a string of different characters created with a crypt algor like md5 or sha1
+
+  so :
+   - when user types in a password the password becomes crypted and compares with
+        the crypted password stored in the db
+   - also when using crypting the so called "Salt" is preffered to be used
+        it makes it more difficult to hack it all: Example of using salt --->
+
+        //the salt "appendix" adds a string to the start of the crypted password
+        // in this case i ad the 2 last chars of users username + word kocmoc
+        $salt = '$1$' . substr($username, -2) . 'kocmoc$';
+        $md5_password = crypt($password, $salt);
+        //checks against the db
+        $login_ok = userExistsInDBPreparedStatement($username, $md5_password, "users");
+
+4.
+
+

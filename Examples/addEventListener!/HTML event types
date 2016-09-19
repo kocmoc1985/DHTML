@@ -1,0 +1,86 @@
+The different types of such events that can occur are:
+
+load
+    The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.
+
+        * Bubbles: No
+        * Cancelable: No
+        * Context Info: None
+
+unload
+    The unload event occurs when the DOM implementation removes a document from a window or frame. This event is valid for BODY and FRAMESET elements.
+
+        * Bubbles: No
+        * Cancelable: No
+        * Context Info: None
+
+abort
+    The abort event occurs when page loading is stopped before an image has been allowed to completely load. This event applies to OBJECT elements.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+error
+    The error event occurs when an image does not load properly or when an error occurs during script execution. This event is valid for OBJECT elements, BODY elements, and FRAMESET element.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+select
+    The select event occurs when a user selects some text in a text field. This event is valid for INPUT and TEXTAREA elements.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+change
+    The change event occurs when a control loses the input focus and its value has been modified since gaining focus. This event is valid for INPUT, SELECT, and TEXTAREA. element.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+submit
+    The submit event occurs when a form is submitted. This event only applies to the FORM element.
+
+        * Bubbles: Yes
+        * Cancelable: Yes
+        * Context Info: None
+
+reset
+    The reset event occurs when a form is reset. This event only applies to the FORM element.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+focus
+    The focus event occurs when an element receives focus either via a pointing device or by tabbing navigation. This event is valid for the following elements: LABEL, INPUT, SELECT, TEXTAREA, and BUTTON.
+
+        * Bubbles: No
+        * Cancelable: No
+        * Context Info: None
+
+blur
+    The blur event occurs when an element loses focus either via the pointing device or by tabbing navigation. This event is valid for the following elements: LABEL, INPUT, SELECT, TEXTAREA, and BUTTON.
+
+        * Bubbles: No
+        * Cancelable: No
+        * Context Info: None
+
+resize
+    The resize event occurs when a document view is resized.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+
+scroll
+    The scroll event occurs when a document view is scrolled.
+
+        * Bubbles: Yes
+        * Cancelable: No
+        * Context Info: None
+

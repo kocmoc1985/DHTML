@@ -1,0 +1,3 @@
+{"signal":"discharge","description":"The time point when the batch is beeing discharged"}
+{"signal":"start_batch","description":""}
+{"signal":"charge_active","description":""}

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='windows-1252'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/XML1.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE arg SYSTEM "XML1.dtd">
+
+    <arg>
+    ...
+    </arg>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <problem>
+        <title>how to diplay HTML as text in HTML doc </title>
+        <tags>html as text, display html</tags>
+        <solution>
+            replace < by &lt; and > by &gt;
+        </solution>
+    </problem>
+    
+    <problem>
+        <title>Insert a break after each element </title>
+        <tags>after,:after,css after,pseudo, break with after</tags>
+        <solution>
+            .needs-space:after
+            {
+            content: " ";
+            display: block;
+            clear: both; /* if you need to break floating elements */
+            }
+        </solution>
+    </problem>
+    
+    
+</root>

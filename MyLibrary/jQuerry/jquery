@@ -1,0 +1,16 @@
+If you dont have the file localy use this link under the head element
+##<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+
+Add event (skickaBtn = button) (checkBeforeSending = method to launch) 
+### $(skickaBtn).click(checkBeforeSending);    
+
+Remove default Event (skickaBtn is the button of the type 'submit')
+##### $(skickaBtn).click(function(event){    
+        event.preventDefault();
+        });
+
+This is to prevent any jQuery code from running before the document 
+is finished loading (is ready).
+#####$(document).ready(function(){
+   // jQuery functions go here...
+});

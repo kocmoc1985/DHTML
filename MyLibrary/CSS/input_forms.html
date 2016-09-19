@@ -1,0 +1,156 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .example{
+                width: 450px;
+                height: 200px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 7px;
+                padding-right: 7px;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            #container_1{
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                text-align: center;
+            }
+
+            #container_1 select{
+                width: 90%;
+                background-color: #24BFE4;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -khtml-border-radius: 5px; 
+                border-radius: 5px; 
+            }
+
+            #container_1 option:hover{
+                text-decoration: underline;
+            }
+
+            #container_2{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: center;
+            }
+
+            #container_3{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: left;
+            }
+
+            #container_3 label:after{
+                content: " ";
+                display: block;
+                clear: both; 
+            }
+
+
+
+            #container_4{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: left;
+            }
+
+            #container_5{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: left;
+            }
+
+            #container_5 textarea{
+                -moz-border-radius: 0px 10px 10px 10px;
+                -webkit-border-radius: 0px 10px 10px 10px;
+                -khtml-border-radius: 0px 10px 10px 10px; 
+                border-radius: 0px 10px 10px 10px; 
+            }
+
+
+
+
+
+        </style>
+
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    </head>
+    <body>
+        <h2 style="text-align: center">Input forms</h2>
+        <div class="example" style="height: 150px;">
+            <div id="container_1">
+                <select name="select_option" id="option">
+                    <option value="">Choose</option>
+                    <option value="The Killers">The Killers</option>
+                    <option value="Van Halen">Van Halen</option>
+                    <option value="Iron Maiden">Iron Maiden</option>
+                    <option value="Journey">Journey</option>
+                    <option value="Coldplay">Coldplay</option>
+                </select>
+                <p>Dropbox Example</p>
+            </div>
+        </div>
+
+        <div class="example" style="height: 150px;">
+            <div id="container_2">
+                <input type="radio" name="grade" value="1" id="bad">
+                <label for="bad">Dålig</label>
+                <input type="radio" name="grade" value="2" id="neutral">
+                <label for="neutral">Mellan</label>
+                <input type="radio" name="grade" value="3" id="good">
+                <label for="good">Bra</label>
+                <p>Radio buttons in column</p>
+            </div>
+        </div>
+
+        <div class="example" style="height: 150px;">
+            <div id="container_3">
+                <input type="radio" name="grade_2" value="1" id="b">
+                <label for="bad">Dålig</label>
+                <input type="radio" name="grade_2" value="2" id="n">
+                <label for="neutral">Mellan</label>
+                <input type="radio" name="grade_2" value="3" id="g">
+                <label for="good">Bra</label>
+                <p>Radio buttons in a row</p>
+            </div>
+        </div>
+
+        <div class="example" style="height: 150px;">
+            <div id="container_4">
+                <input type="checkbox" name="med vem" value="ensam">Ensam<br>	  
+                <input type="checkbox" name="med vem" value="husdjur" checked="checked">Med ditt husdjur<br>
+                <input type="checkbox" name="med vem" value="vänner">Med vänner<br>
+                <input type="checkbox" name="med vem" value="familj">Med familj<br>
+                <p>Checkbox</p>
+            </div>
+        </div>
+
+        <div class="example" style="height: 150px;">
+            <div id="container_5">
+                <textarea name="message" rows="4" cols="20" maxlength="10000"></textarea>
+                <p>Textarea</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

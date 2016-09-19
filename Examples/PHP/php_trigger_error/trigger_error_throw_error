@@ -1,0 +1,5 @@
+ //check connection
+    if (mysqli_connect_errno () ||  mysqli_connect_error()) {
+ ! >>>>      trigger_error("DB Connection trouble, please try aggain later!");
+        return false;
+    }

@@ -1,0 +1,50 @@
+###0.
+Fördelen med att använda cookies med PHP jämfört med JavaScript är att du läser
+cookien/smulan innan du skickar outputen till klienten. Du kan anpassa innehållet efter
+cookien/smulan innan sidan når klienten och inget extra arbete sker på klientsidan.
+
+
+
+###1.
+Om du skall sätta en smula med PHP på en sida så
+måste du göra detta i ett stycke php-skript som finns först i filen.
+Det får inte ens finnas en
+tom rad innan första <?php-taggen då denna rad i sådana fall går som output
+till webbläsaren.
+
+Ett exempel med bufferlagring:
+<?php
+ob_start();
+echo "Hello World";
+setcookie("cookie_name", "cookie_value");
+ob_end_flush();
+?>
+
+###2.
+Om man vill strukturera sin sida så att det sker output i koden eller mellan kodblock innan
+man sätter en cookie/smula så kan man använda sig av bufferfunktioner för att förhindra detta.
+Funktionen ob_start() anger att all output skall lagras tills vidare. Om ingen output skett innan
+ob-start anropas så kan du fortfarande skicka headers och då bland annat sätta en
+cookie/smula. När skriptet har utfört det som behövs innan output genereras till klienten så
+anropar man funktionen ob_end_flush() för att skicka den output som finns i bufferten och
+stänga av bufferlagringen.
+
+
+###3.
+Kod som sätter en cookie eller snarare en smula:
+<?php
+$cookie_name = "test";
+$cookie_value = "Sten Sture den äldre";
+$cookie_expire = time()+86400;
+setcookie($cookie_name, $cookie_value, $cookie_expire);
+?>
+
+Kod som använder den satta smulan på en annan sida:
+<?php
+if(isset($_COOKIE['test']))
+echo "Välkommen " . $_COOKIE['test']. "!<br>";
+else
+echo "Det är fel <br>";
+?>
+
+

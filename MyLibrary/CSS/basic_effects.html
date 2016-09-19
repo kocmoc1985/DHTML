@@ -1,0 +1,239 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .example{
+                width: 450px;
+                height: 300px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 7px;
+                padding-right: 7px;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            #container_1{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+
+                -webkit-box-shadow: 0px 5px 5px 0px #444;
+                -moz-box-shadow: 0px 5px 5px 0px #444;
+                box-shadow: 0px 5px 5px 0px #444;
+            }
+
+            #container_2{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+
+                -webkit-box-shadow: 0px 0px 5px 0px #444;
+                -moz-box-shadow: 0px 0px 5px 0px #444;
+                box-shadow: 0px 0px 5px 0px #444;
+            }
+
+            #container_3{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -khtml-border-radius: 10px; 
+                border-radius: 10px; 
+            }
+
+            #container_4{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+
+                -moz-border-radius: 0px 10px 10px 10px;
+                -webkit-border-radius: 0px 10px 10px 10px;
+                -khtml-border-radius: 0px 10px 10px 10px; 
+                border-radius: 0px 10px 10px 10px; 
+            }
+
+            #container_5{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+                font-size: 18pt;
+                color: white;
+
+                /*Raised Text / 3D Text*/
+                text-shadow: 1px 1px #000000;
+
+            }
+
+            #container_6{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: lightblue;
+                font-size: 18pt;
+                color: white;
+
+                /*Inset Text - light text, dark background*/
+                text-shadow: 0px -1px 0px #374683;
+
+                background: #508DC1;
+                background: -moz-linear-gradient(100% 100% 90deg, #5488BD, #24BFE4);
+                background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5488BD), to(#24BFE4));
+                background: -webkit-linear-gradient(#5488BD, #24BFE4);
+                background: -o-linear-gradient(#5488BD, #24BFE4);
+
+            }
+
+            #container_7{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: white;
+                font-size: 18pt;
+                color: blue;
+
+                /*Inset Text - light text, dark background*/
+                text-shadow: 0px 5px 0px #e5e5ee;
+            }
+            
+            #container_8{
+                margin-top: 20px;
+                margin-left:10px;
+                padding-left:10px;
+                padding-bottom:5px;
+                width:400px;
+                height: 150px;
+                overflow: auto;
+                background: white;
+                font-size: 18pt;
+                color: blue;
+
+                /*Inset Text - light text, dark background*/
+                text-shadow: 0px 0px 1px rgb(51, 51, 51);
+            }
+
+        </style>
+
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    </head>
+    <body>
+        <h2 style="text-align: center">Drop Shadow</h2>
+        <div class="example">
+            <div id="container_1"></div>
+            <p>Drop Shadow 1</p>
+            <span>-webkit-box-shadow: 0px 5px 5px 0px #444;</span><br>
+            <span>-moz-box-shadow: 0px 5px 5px 0px #444;{</span><br>
+            <span>box-shadow: 0px 5px 5px 0px #444;</span><br>
+        </div>
+
+        <div class="example">
+            <div id="container_2"></div>
+            <p>Drop Shadow 2</p>
+            <span>-webkit-box-shadow: 0px 0px 5px 0px #444;</span><br>
+            <span>-moz-box-shadow: 0px 0px 5px 0px #444;{</span><br>
+            <span>box-shadow: 0px 0px 5px 0px #444;</span><br>
+        </div>
+
+        <h2 style="text-align: center">Round Corners</h2>
+
+        <div class="example">
+            <div id="container_3"></div>
+            <p>Round corners 1</p>
+            <span>* {</span><br>
+            <span>-moz-border-radius: 10px;</span><br>
+            <span>-webkit-border-radius: 10px;{</span><br>
+            <span>-khtml-border-radius: 10px;</span><br>
+            <span>border-radius: 10px;</span><br>
+            <span>}</span><br>
+        </div>
+
+        <div class="example">
+            <div id="container_4"></div>
+            <p>Round corners 2 (top-left corner not rounded!)</p>
+            <span>-moz-border-radius: 0px 10px 10px 10px;</span><br>
+            <span>-webkit-border-radius: 0px 10px 10px 10px;{</span><br>
+            <span>-khtml-border-radius: 0px 10px 10px 10px;</span><br>
+            <span>border-radius: 0px 10px 10px 10px;</span><br>
+        </div>
+
+        <h2 style="text-align: center">Text</h2>
+
+        <div class="example">
+            <div id="container_5"><h3 style="text-align:center">Raised Text</h3></div>
+            <p>Raised Text</p>
+            <span>text-shadow: 2px 2px #000000;</span><br>
+        </div>
+
+        <div class="example">
+            <div id="container_6"><h3 style="text-align:center;margin-top: 60px;">Inset Text</h3></div>
+            <p>Inset Text - light text, dark background</p>
+            <span>text-shadow: 0px -1px 0px #374683;</span><br>
+
+            <p>Use linear gradient to maximize the effect (the effect is for example not visible on plain blue..)</p>
+
+            <span>background: -moz-linear-gradient(100% 100% 90deg, #5488BD, #24BFE4);</span><br>
+            <span>background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5488BD), to(#24BFE4));{</span><br>
+            <span>background: -webkit-linear-gradient(#5488BD, #24BFE4);</span><br>
+            <span>background: -o-linear-gradient(#5488BD, #24BFE4);</span><br>
+
+        </div>
+
+        <div class="example">
+            <div id="container_7"><h3 style="text-align:center">Text shadow</h3></div>
+            <p>Text shadow</p>
+            <span>text-shadow: 0px 5px 0px #e5e5ee;</span><br>
+        </div>
+        
+        <div class="example">
+            <div id="container_8"><h3 style="text-align:center">Text shadow</h3></div>
+            <p>Text shadow</p>
+            <span>text-shadow: 0px 0px 1px rgb(51, 51, 51);</span><br>
+        </div>
+
+    </body>
+</html>

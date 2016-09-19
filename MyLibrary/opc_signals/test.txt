@@ -1,0 +1,2 @@
+{"date_time":"00.00.00","ip":"192.168.0.1","country_code":"RUS","file_and_path":"aaa"}
+{"date_time":"00.00.00","ip":"192.168.0.22","country_code":"DE","file_and_path":"bbb"}

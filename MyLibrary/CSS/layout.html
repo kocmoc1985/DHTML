@@ -1,0 +1,297 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <style type="text/css">
+
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+
+            #main_container{
+
+            }
+
+            .example{
+                width: 450px;
+                /*height: 150px;*/
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 7px;
+                padding-right: 7px;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            /***********************************************************************/
+            #fixed{
+                position: fixed;
+                bottom: 50%;
+                right: 0;
+                width: 200px;
+                height: 40px;
+                background: black;
+                color: white;
+                text-align: center;
+            }
+            /***********************************************************************/
+            /*Elements side-by-side*/
+            #container_1{
+                margin-top: 20px;
+                width: 40%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: red;
+                display: inline-block;
+            }
+
+            #container_2{
+                margin-top: 20px;
+                width: 40%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                display: inline-block;
+            }
+            /*******************************************************************/
+            /*Elements side-by-side*/
+            #container_3{
+                margin-top: 20px;
+                width: 50%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: red;
+                float: left;
+            }
+
+            #container_4{
+                margin-top: 20px;
+                width: 50%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                float:left;
+            }
+            /**************************************************************************/
+
+            /********************************Example 2**********************************/
+            /*one after another without spacing*/
+            #container_5{
+                margin-top: 20px;
+                width: 40%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: red;
+            }
+
+            #container_6{
+                width: 40%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+            }
+            /**************************************************************************/
+
+            #container_7{
+                width: 40%;
+                height: 100px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                float: right;
+            }
+
+            /**************************************************************************/
+            #example_auto_scale{
+                width: 28%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            #container_8{
+                position: relative;
+                /*width: 40%;*/
+                height: 100px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                /*float: right;*/
+            }
+            /**************************************************************************/
+
+
+            /**************************************************************************/
+
+
+            .header_{
+                width: 99%;
+                height: 40px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                float: left;
+            }
+
+            .sidebar_{
+                width: 30%;
+                height: 150px;
+                border-style: outset;
+                border-width: 2px;
+                background: red;
+                float: left;
+            }
+            .content_{
+                width: 69%;
+                height: 150px;
+                border-style: outset;
+                border-width: 2px;
+                background: black;
+                float: left;
+            }
+
+            .footer_{
+                width: 99%;
+                height: 30px;
+                border-style: outset;
+                border-width: 2px;
+                background: red;
+                float: left;
+            }
+
+
+
+            /**************************************************************************/
+            #example_r{
+                width: 465px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            #example_r a{
+                display: block;
+                transform: rotate(180deg);
+                text-align: center;
+                font-size: 9pt;
+            }
+
+            #menu_container_{
+                width: 100%;
+                height: 100px;
+                border-width: 2px;
+                background: black;
+            }
+
+            #menu_{
+                width: 70px;
+                height: 70px;
+                border-width: 2px;
+                background: red;
+                /*transform: rotate(-35deg) translate(-92px, 22px);*/
+                transform: rotate(135deg);
+                margin-left: -39px;
+                margin-top: -35px;
+            }
+            /**************************************************************************/
+
+        </style>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    </head>
+    <body>
+        <div id="fixed">Iam fixed</div>
+        <div id="main_container">
+            
+            
+
+            <div class="example">
+                <div id="container_1"></div>
+                <div id="container_2"></div>
+                <p>Elements side by side with (display: inline-block;)</p>
+            </div>
+
+            <div class="example">
+                <div id="container_3"></div>
+                <div id="container_4"></div>
+                <p style="clear:both; color: green; float:left">Elements side by side with (float:left) 
+                    - this one will work properly without (because the width without this code snippet is defined wrong):</p>
+
+                <div style="float: left">
+                    <span>* {</span><br>
+                    <span>-webkit-box-sizing: border-box;</span><br>
+                    <span>-moz-box-sizing: border-box;{</span><br>
+                    <span>box-sizing: border-box;</span><br>
+                    <span>}</span><br>
+                </div>
+
+            </div>
+
+            <div class="example">
+                <div id="container_5"></div>
+                <div id="container_6"></div>
+                <p>Elements - one after another without spacing</p>
+            </div>
+
+            <div class="example">
+                <div id="container_7"></div>
+                <p><span style="color:red">To make the text fit the container use <span style="text-decoration: underline">"overflow:auto" for the container - note the height of the container shouldn't be fixed in this case!</span></span> laboratory test results and etceteras can be selected and displayed separately or simultaneously with the chart of the signals. Possibility to see the entire batch related data in one screen helps the user to identify cause-and-effect relationships and solve problems.</p>
+            </div>
+
+            <div id="example_auto_scale">
+                <div id="container_8"></div>
+                <p>Example of how a div scales in accordance to the width of the window (resize the window to see)</p>
+            </div>
+
+            <div class="example">
+                <div class="header_"></div>
+                <div class="sidebar_"></div>
+                <div class="content_"></div>
+                <div class="footer_"></div>
+                <p style="float:left">Typical layout example, this will not work without</p><br>
+
+                <div style="float: left">
+                    <span>* {</span><br>
+                    <span>-webkit-box-sizing: border-box;</span><br>
+                    <span>-moz-box-sizing: border-box;{</span><br>
+                    <span>box-sizing: border-box;</span><br>
+                    <span>}</span><br>
+                </div>
+
+            </div>
+
+            <div id="example_r">
+                <div id="menu_container_"><div id="menu_"><a href="">Link1</a></div></div>
+                <p>Rotated div with link</p>
+            </div>
+        </div>
+
+    </body>
+</html>

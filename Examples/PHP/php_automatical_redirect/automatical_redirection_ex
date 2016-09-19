@@ -1,0 +1,2 @@
+ echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php?link=adminC&amp;title=admin">';
+ exit;

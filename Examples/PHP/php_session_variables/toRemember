@@ -1,0 +1,35 @@
+##Sessionsvariabler
+Sessionsvariabler är variabler som är knutna till en användare - en session med ett sessions-
+ID. Sessionsvariabler finns på servern och kan på så sätt användas för att föra över
+information mellan sidor. Dessa kan exempelvis användas för att:
+• hålla reda på information om inloggad användare
+• flerstegs-formulär
+• automatisk inloggning
+• forum
+Det finns två sätt att förmedla sessions-ID mellan sidor – cookies och direkt i URL:en. Att
+använda cookies är att föredra men är inte alltid möjligt då användaren kanske inte tillåter
+cookies. De flesta tillåter dock cookies idag och vi kommer att fokusera på att använda
+cookies.
+
+Den bakomliggande tekniken som får det att fungera med cookies innebär att servern sätter en
+cookie hos klienten med automatisk genererat session ID för att kunna identifiera klienten.
+Det skapas också en fil på servern som kan identifieras med hjälp av sessions-ID. Servern
+sparar användarens sessionsvariabler i $_SESSION[]-listan som lagras i filen på servern. Vid
+
+nästa anrop hämtas session ID från cookien hos servern och sedan kan PHP-scriptet lätt återfå
+sina variabler ur session-listan i motsvarande fil.
+session_start()
+
+Är anropet som används för att registrera sessionen det vill säga aktivera automatiken. Detta
+anrop måste alltid kallas innan du använder sessionsvariabler. Session_start läser klientens
+session-id från klientens cookie eller sätter en ny cookie och fil om ingen tidigare session
+fanns.
+Lagra och läsa i sessionsvariabel:
+
+Börja skriptet med:
+
+session_start();
+Att spara ned ett värde ”värde” i sessionsvariabeln ”namn”.
+$_SESSION[namn] = "värde";
+Värdena kan läsas från $_SESSION[namn].
+$namn = $_SESSION[namn];

@@ -1,0 +1,55 @@
+http://homeweb.mah.se/~m09k2847/php/test_php.php
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+###HTML element skapas med print!
+function skapatabellrad( $kolumn1, $kolumn2) {
+ print "<tr><td>$kolumn1</td><td>$kolumn2</td></tr>";
+}
+
+//***************************************<1>
+Escape-tecken
+Escape-tecken används för att skilja på kod och vanlig text när man vill skriva text som
+annars är reserverad som kod, till exempel citationstecken. För att skriva ut: Att leta runt på
+Internet kallas för att "surfa". Skriver man i PHP
+
+echo "<P>Att leta runt på Internet kallas för att \"surfa\"</P>"
+
+\-tecknet kallas för escapetecknet, det sätts framför det man ska skriva, ska man skriva just \-
+tecknet så skriver man \\.
+//****************************************</1>
+
+//*************************************************<1.2>
+Följande exempel visar hur en variabels värde kan inkluderas i en sträng. När dubbla
+citationstecken används så tolkas variablerna inuti som beskrivit ovan. Använd dubbla
+citationstecknet så blir det rätt.
+$text = "en egen hund";
+echo 'Jag är lycklig, jag har $text!<BR>';
+echo "Jag är lycklig, jag har $text! <BR>";
+Utskrift:
+Jag är lycklig, jag har $text !
+Jag är lycklig, jag har en egen hund !
+//********************************************************</1.2>
+
+//******************************************<2>
+Kommentarer
+<?php //Detta är kommenterad text
+/*Detta är kommenterad text som kan användas till mer än en rad*/
+#Detta är kommenterad text
+?>
+//******************************************</2>
+
+
+//*************************************************<3>
+
+När ska vilken metod då användas?
+• GET rekommenderas att använda till att ta fram data från en databas eller dylikt så
+länge det rör sig om kortare indata för sökningen eller instruktionen. Om det inte är
+känslig information som skickas så kan GET användas. Användaren kan alltid enkelt
+kan ändra informationen som skickas med GET.
+• POST rekommenderas att använda för att lägga till data till databasen eller om man
+skickar information som är känslig på något sätt och som man vill minska risken att
+användaren manipulerar indatan. Det går fortfarande att manipulera POST-data men
+det är svårare än att manipulera GET-data.
+
+//*********************************************************</3>

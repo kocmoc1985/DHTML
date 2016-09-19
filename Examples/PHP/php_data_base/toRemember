@@ -1,0 +1,7 @@
+
+
+$c = mysqli_connect('student.ts.mah.se', 'testanv', 'qwerty', 'da123avt10') or die("ERROR: Cannot connect.");
+
+
+parameters: for the mysqli_connect: host,user,pass,dbname,port,socket !!!!!!!!!!!!!!!!!
+

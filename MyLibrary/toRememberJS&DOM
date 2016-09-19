@@ -1,0 +1,31 @@
+###
+<script type="text/javascript">
+document.write("<p>" + Date() + "</p>");
+</script>
+
+
+##### The script file/s containing the library (my_lib) methods should be set 
+before the main js file - so it may look like that:
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Äperöd</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="my_lib.js"></script>
+<script type="text/javascript" src="lab2.js"></script>
+--------------------------------------------------------------------------------
+
+##### Ways of assigning of a className to an Element
+//the common way and the only one i seen so far
+1. document.getElementById("name").className = "ccsred";
+
+
+##### Sorting an array
+function sortDesc(a,b)
+{
+    return b - a;
+}
+
+function sortAsc(a,b)
+{
+return a - b;
+}

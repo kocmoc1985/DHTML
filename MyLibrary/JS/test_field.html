@@ -1,0 +1,73 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.9.1.js"></script>
+        
+        <style type="text/css">
+            .example{
+                width: 450px;
+                height: 200px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 7px;
+                padding-right: 7px;
+                border-style:solid;
+                border-width: 1px;
+                overflow: auto;
+            }
+
+            #container_1{
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                text-align: center;
+            }
+        </style>
+
+
+
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    </head>
+    <body>
+
+
+        <div id="aa" class="example" style="height: 150px;">
+            <div id="container_1">
+                <select name="select_option" id="option">
+                    <option value="">Choose</option>
+                    <option value="The Killers">The Killers</option>
+                    <option value="Van Halen">Van Halen</option>
+                    <option value="Iron Maiden">Iron Maiden</option>
+                    <option value="Journey">Journey</option>
+                    <option value="Coldplay">Coldplay</option>
+                </select>
+                <p>Dropbox Example</p>
+            </div>
+        </div>
+
+        <div id="test" style="margin-left: auto; margin-right: auto; width: 50%;">test</div>
+
+        <script language = "javascript" >
+            go();
+
+            function go() {
+                func();
+            }
+
+            function func(){
+                $("#aa").html("<p>test paragraph</p>");
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+/* 
+    Document   : transitions
+    Created on : 2013-apr-24, 16:04:30
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/*==========================================================*/
+
+
+/*===========================Transition 1===============================*/
+/*A great example of an easy transition to underline a element!*/
+.sidebarLink{ 
+    width:70%;
+    height:5%;
+    margin-top: 20px;
+    margin-left: 15%;
+    position: relative;
+    text-align: left;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+div.sidebarLink:hover {
+    /*    background-color:ghostwhite;
+        text-decoration: underline;*/
+    border-bottom-width: 5px;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+
+}
+
+/*=========================End Transition 1=================================*/

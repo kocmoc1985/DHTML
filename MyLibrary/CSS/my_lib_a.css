@@ -1,0 +1,288 @@
+/**
+*VERY IMPORTANT
+*/
+setDirectlyFromTagInHTML{
+    /*
+    <p style="clear:both; color: green; float:left">Elements sidan om varandra with (float:left)</p>
+    */
+}
+/**
+*VERY IMPORTANT
+*/
+setCSSRullesInHTML{
+    /*
+    <style type="text/css">
+    
+    </style>
+    */
+}
+/**
+*Classes shall be only separated with " " (space between)
+*/
+div_can_have_several_classes{
+    /*<div class='container_basic slidable_element_container'>*/
+}
+
+#makeDivSameSizeAsTheScreen{
+
+    html, body{
+        height: 100%;
+    }
+
+    #sectionOne{
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/*
+*SUUPPPER IMPORTANT
+* Allways implement this code first off all
+* this one makes that boxes scales properly
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#makeSoChildsMarginTopNotInfluence{
+    overflow: hidden;
+}
+
+
+/*
+*SUPER IMPORTANT
+*Ovverides the inherited css rules
+*@tags ovveride css, overide css, overwrite css, owerwrite css
+*/
+#ovveride_css_rule{
+    float:left !important;
+}
+
+/**
+* SUPER SUPER SUPER SUPER SUPER SUPER USEFUL!
+* Choosing th,tr,td in uploadFormList class
+*/
+.uploadFormList th,.uploadFormList tr,.uploadFormList td{
+    border-width: 0px;
+    text-align: left;
+}
+
+/**
+* The example below specifies a black border for table, th, and td elements:
+*/
+table, th, td {
+    border: 1px solid black;
+} 
+
+/**
+*SUPER IMPORTANT!!!!
+*Note this selector choses all "li" elements which are inside "ol" and "ol" is inside ".column_2_article"
+*/
+.column_2_article ol li{
+    padding-bottom: 10px;
+}
+
+/**
+* VERY USEFUL!
+* This one shows how to select multiple elements inside an "id"
+*/
+#add_form input, #add_form select{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/**
+* VERY USEFUL!
+* This one arranges same properties for 3 different classes
+*/
+.calendar_day_today,.calendar_day_reserved,.calendar_day_ocupied{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+/**
+* EXTREAMLY IMPORTANT
+* This one makes that the Container/Element fits the
+* size of the elements inside it
+*/
+.fitContainer{
+    height: auto;
+    overflow: auto;
+    /*You May also use:
+    padding-bottom: 40 px;
+    not for the wrapper but for the "content" element*/
+}
+
+/**
+*THIS IS SUPER DUPER IMPORTANT
+*VERY USEFUL FOR "Drop down menues"
+*This one makes that other elements aren't
+*moved by the component using this setting
+*/
+.displayWithoutMovingOtherComponents{
+    display: inline-block;
+}
+
+.hideInnerHtml{
+    font-size: 0pt;
+}
+
+#hidden{
+    visibility: hidden;
+}
+
+/*
+*
+*Allways important to remember
+*This one does that when you t.ex have </h1> tag it will not 
+*make "step down" but will remain on the same line 
+*/
+.displayInline{
+    display: inline;
+}
+
+
+/*
+*This one works!
+*/
+
+#centerDivHorizontal{
+    margin-left:auto;
+    margin-right:auto;
+    /*or margin: 10px auto*/
+}
+
+#centerTextInDivHorizontal{
+    text-align: center;
+}
+
+#centerTextInDivVertical{
+    /*try manipulating with this value*/
+    line-height: 60px;
+}
+
+/*
+* This is one is very good to remember, this
+* helps to autoscale a div to fit the content 
+* inside it.
+*/
+#fitHeight{
+    overflow: auto;
+}
+
+/**
+*SUPER IMPORTANT FOR DIV POSITIONING
+*Good to use in connection with "float" attr
+*/
+#FloatHelp{
+    clear: both;
+}
+
+/*
+*OBS!!!!! SUPER IMPORTANT
+* This one makes it possible to have a kind
+* of "Session,global" variable which remains after
+* document is reloaded!!
+*
+* Do in following way: add this div with PHP and then get the
+* text of the hidden field with js
+*/
+#HiddenField{
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+/*
+*
+*Good example of a wrapper which
+*is centered in the screen.
+*It makes also sence to set the height with javaScript
+*/
+#wrapperMixContWebbPage {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 950px;
+    position: relative;
+    /*height: 1700px;*/
+}
+
+#wrapperVedalife{
+    background-color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 950px;
+    position: relative;
+    /*    margin-bottom: 25px;*/
+    height:auto;
+    overflow: auto;
+
+    border-style: solid;
+    border-width: 5px;
+
+    /*drop shadow*/
+    -webkit-box-shadow: 0px 0px 30px 0px #444;
+    -moz-box-shadow: 0px 0px 30px 0px #444;
+    box-shadow: 0px 0px 30px 0px #444;
+
+    /*round corners*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+
+/**
+*Just to remember possibility
+*/
+#cursor{
+    cursor: pointer;
+}
+
+
+/*******************************************Diff column widths in table********/
+uploadForm table{
+    width: 95%;
+}
+
+/*This classes you use for <td> tags*/
+.colW_1{
+    width: 70%;
+    word-wrap:break-word;
+}
+
+.colW_2{
+    width: 30%;
+}
+
+/******************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

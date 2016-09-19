@@ -1,0 +1,30 @@
+Kocmoc4765 - novij zahod v mah
+
+http://webreg.mah.se/Services/lpwT30.aspx
+
+ftp://ftphome.mah.se
+
+M09K2847
+
+ftp://M09K2847@ftphome.mah.se/DATA1/STUDF/M09K2847/public_html/bars/lab1/lab1.htm
+
+
+http://homeweb.mah.se/~m09k2847/lab1.htm
+
+http://homeweb.mah.se/~m09k2847/bars/lab1/lab1.html (fungerar!!!)
+
+
+http://homeweb.mah.se/~m09k2847/php/get_sida2.php
+
+
+http://homeweb.mah.se/~m09k2847/bars/lab1a/lab1a.php
+
+http://homeweb.mah.se/~m09k2847/bars/lab1bcd/lab1bcd.html
+
+http://homeweb.mah.se/~m09k2847/bars/lab2/lab2/lab2.html
+
+http://homeweb.mah.se/~m09k2847/bars/lab3/index.php
+
+http://homeweb.mah.se/~m09k2847/bars/lab4/db_test.php
+
+http://student.ts.mah.se/da123aht11/echoscript.php?name=Andrei&Age=14&seriefigur=Musse

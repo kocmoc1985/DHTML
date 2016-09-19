@@ -1,0 +1,1 @@
+echo "<a href ='" .$ref ."'>$ref</a>";  - to dynamicly inset the link!!!
