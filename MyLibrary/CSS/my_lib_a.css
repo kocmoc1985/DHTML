@@ -23,6 +23,12 @@ div_can_have_several_classes{
     /*<div class='container_basic slidable_element_container'>*/
 }
 
+/*Only ul and li DIRECTLY inside the "header" element*/
+header > ul > li{
+    /*tar up hela breden  + kan trycka upp höjden;*/
+    display: inline-block;
+}
+
 #makeDivSameSizeAsTheScreen{
 
     html, body{
