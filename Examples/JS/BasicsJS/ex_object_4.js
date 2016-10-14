@@ -2,11 +2,11 @@ function Pat(name){
   this.name=name;
   this.meow = function(){
     alert("Mjau, jag heter "+this.name+".");
-  }
+  };
   
   this.changeName = function(newName){
     this.name = newName;
-  }
+  };
 }
 
 
